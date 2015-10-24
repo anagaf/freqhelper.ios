@@ -12,6 +12,7 @@
 		A84FE0A81BDBBC81003070A4 /* StaticRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FE0A71BDBBC81003070A4 /* StaticRange.swift */; };
 		A84FE0AC1BDBCF4B003070A4 /* Lpd8.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FE0AB1BDBCF4B003070A4 /* Lpd8.swift */; };
 		A84FE0AE1BDBD3B1003070A4 /* FrequencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FE0AD1BDBD3B1003070A4 /* FrequencyConverter.swift */; };
+		A84FE0B01BDBD9E6003070A4 /* Lpd69.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FE0AF1BDBD9E6003070A4 /* Lpd69.swift */; };
 		A8F987E31BD5448B00C08414 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F987E21BD5448B00C08414 /* AppDelegate.swift */; };
 		A8F987E51BD5448B00C08414 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F987E41BD5448B00C08414 /* RootViewController.swift */; };
 		A8F987E91BD5448B00C08414 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F987E81BD5448B00C08414 /* ModelController.swift */; };
@@ -47,6 +48,7 @@
 		A84FE0A71BDBBC81003070A4 /* StaticRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticRange.swift; sourceTree = "<group>"; };
 		A84FE0AB1BDBCF4B003070A4 /* Lpd8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lpd8.swift; sourceTree = "<group>"; };
 		A84FE0AD1BDBD3B1003070A4 /* FrequencyConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrequencyConverter.swift; sourceTree = "<group>"; };
+		A84FE0AF1BDBD9E6003070A4 /* Lpd69.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lpd69.swift; sourceTree = "<group>"; };
 		A8F987DF1BD5448B00C08414 /* Freqhelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freqhelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F987E21BD5448B00C08414 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8F987E41BD5448B00C08414 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				A84FE0A31BDBB87E003070A4 /* Range.swift */,
 				A84FE0A71BDBBC81003070A4 /* StaticRange.swift */,
 				A84FE0AB1BDBCF4B003070A4 /* Lpd8.swift */,
+				A84FE0AF1BDBD9E6003070A4 /* Lpd69.swift */,
 			);
 			name = Ranges;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				A8F987E91BD5448B00C08414 /* ModelController.swift in Sources */,
 				A8F988171BD5496F00C08414 /* ChannelViewController.swift in Sources */,
 				A8F987E31BD5448B00C08414 /* AppDelegate.swift in Sources */,
+				A84FE0B01BDBD9E6003070A4 /* Lpd69.swift in Sources */,
 				A84FE0AE1BDBD3B1003070A4 /* FrequencyConverter.swift in Sources */,
 				A84FE0A41BDBB87E003070A4 /* Range.swift in Sources */,
 				A84FE0A81BDBBC81003070A4 /* StaticRange.swift in Sources */,
