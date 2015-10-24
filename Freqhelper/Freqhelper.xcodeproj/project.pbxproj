@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A84FE0A11BDBB7FD003070A4 /* Frequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FE0A01BDBB7FD003070A4 /* Frequency.swift */; };
+		A84FE0A41BDBB87E003070A4 /* Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FE0A31BDBB87E003070A4 /* Range.swift */; };
+		A84FE0A81BDBBC81003070A4 /* StaticRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FE0A71BDBBC81003070A4 /* StaticRange.swift */; };
 		A8F987E31BD5448B00C08414 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F987E21BD5448B00C08414 /* AppDelegate.swift */; };
 		A8F987E51BD5448B00C08414 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F987E41BD5448B00C08414 /* RootViewController.swift */; };
 		A8F987E91BD5448B00C08414 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F987E81BD5448B00C08414 /* ModelController.swift */; };
@@ -15,8 +18,8 @@
 		A8F987F11BD5448B00C08414 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8F987EF1BD5448B00C08414 /* LaunchScreen.storyboard */; };
 		A8F987FC1BD5448B00C08414 /* FreqhelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F987FB1BD5448B00C08414 /* FreqhelperTests.swift */; };
 		A8F988071BD5448B00C08414 /* FreqhelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F988061BD5448B00C08414 /* FreqhelperUITests.swift */; };
-		A8F988151BD5491700C08414 /* CtcssViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F988141BD5491700C08414 /* CtcssViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		A8F988171BD5496F00C08414 /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F988161BD5496F00C08414 /* ChannelViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A8F988151BD5491700C08414 /* CtcssViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F988141BD5491700C08414 /* CtcssViewController.swift */; };
+		A8F988171BD5496F00C08414 /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F988161BD5496F00C08414 /* ChannelViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A84FE0A01BDBB7FD003070A4 /* Frequency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Frequency.swift; sourceTree = "<group>"; };
+		A84FE0A31BDBB87E003070A4 /* Range.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Range.swift; sourceTree = "<group>"; };
+		A84FE0A71BDBBC81003070A4 /* StaticRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticRange.swift; sourceTree = "<group>"; };
 		A8F987DF1BD5448B00C08414 /* Freqhelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Freqhelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F987E21BD5448B00C08414 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8F987E41BD5448B00C08414 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +86,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A84FE09F1BDBB7C5003070A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A84FE0A21BDBB823003070A4 /* Ranges */,
+				A84FE0A01BDBB7FD003070A4 /* Frequency.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A84FE0A21BDBB823003070A4 /* Ranges */ = {
+			isa = PBXGroup;
+			children = (
+				A84FE0A31BDBB87E003070A4 /* Range.swift */,
+				A84FE0A71BDBBC81003070A4 /* StaticRange.swift */,
+			);
+			name = Ranges;
+			sourceTree = "<group>";
+		};
 		A8F987D61BD5448B00C08414 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +127,7 @@
 		A8F987E11BD5448B00C08414 /* Freqhelper */ = {
 			isa = PBXGroup;
 			children = (
+				A84FE09F1BDBB7C5003070A4 /* Model */,
 				A8F987E21BD5448B00C08414 /* AppDelegate.swift */,
 				A8F987E41BD5448B00C08414 /* RootViewController.swift */,
 				A8F987E81BD5448B00C08414 /* ModelController.swift */,
@@ -266,9 +291,12 @@
 			files = (
 				A8F987E51BD5448B00C08414 /* RootViewController.swift in Sources */,
 				A8F988151BD5491700C08414 /* CtcssViewController.swift in Sources */,
+				A84FE0A11BDBB7FD003070A4 /* Frequency.swift in Sources */,
 				A8F987E91BD5448B00C08414 /* ModelController.swift in Sources */,
 				A8F988171BD5496F00C08414 /* ChannelViewController.swift in Sources */,
 				A8F987E31BD5448B00C08414 /* AppDelegate.swift in Sources */,
+				A84FE0A41BDBB87E003070A4 /* Range.swift in Sources */,
+				A84FE0A81BDBBC81003070A4 /* StaticRange.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +521,7 @@
 				A8F9880D1BD5448B00C08414 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8F9880E1BD5448B00C08414 /* Build configuration list for PBXNativeTarget "FreqhelperTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +530,7 @@
 				A8F988101BD5448B00C08414 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8F988111BD5448B00C08414 /* Build configuration list for PBXNativeTarget "FreqhelperUITests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +539,7 @@
 				A8F988131BD5448B00C08414 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
