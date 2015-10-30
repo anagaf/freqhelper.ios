@@ -12,17 +12,17 @@ class Settings {
     
     static let channelFrequencyKey : String = "ChannelFrequency"
     
-    static var channelFrequency : Frequency {
+    static var channelFrequency : UInt64 {
         get {
-            let decihertzValue = NSUserDefaults.standardUserDefaults().objectForKey(channelFrequencyKey)
-            if (decihertzValue == nil) {
-                return Frequency()
+            let value = NSUserDefaults.standardUserDefaults().objectForKey(channelFrequencyKey)
+            if (value == nil) {
+                return 0
             } else {
-                return Frequency(decihertz : decihertzValue!.unsignedLongLongValue)
+                return value!.unsignedLongLongValue
             }
         }
-        set(newFrequency) {
-            NSUserDefaults.standardUserDefaults().setObject(NSNumber(unsignedLongLong: newFrequency.decihertz), forKey: channelFrequencyKey)
+        set(newValue) {
+            NSUserDefaults.standardUserDefaults().setObject(NSNumber(unsignedLongLong: newValue), forKey: channelFrequencyKey)
         }
     }
 }

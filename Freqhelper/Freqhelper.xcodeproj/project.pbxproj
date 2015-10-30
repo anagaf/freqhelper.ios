@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A84FE0A11BDBB7FD003070A4 /* Frequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FE0A01BDBB7FD003070A4 /* Frequency.swift */; };
 		A84FE0A41BDBB87E003070A4 /* Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FE0A31BDBB87E003070A4 /* Range.swift */; };
 		A84FE0A81BDBBC81003070A4 /* StaticRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FE0A71BDBBC81003070A4 /* StaticRange.swift */; };
 		A84FE0AC1BDBCF4B003070A4 /* Lpd8.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FE0AB1BDBCF4B003070A4 /* Lpd8.swift */; };
@@ -46,7 +45,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A84FE0A01BDBB7FD003070A4 /* Frequency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Frequency.swift; sourceTree = "<group>"; };
 		A84FE0A31BDBB87E003070A4 /* Range.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Range.swift; sourceTree = "<group>"; };
 		A84FE0A71BDBBC81003070A4 /* StaticRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticRange.swift; sourceTree = "<group>"; };
 		A84FE0AB1BDBCF4B003070A4 /* Lpd8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lpd8.swift; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				A84FE0A21BDBB823003070A4 /* Ranges */,
-				A84FE0A01BDBB7FD003070A4 /* Frequency.swift */,
 				A84FE0AD1BDBD3B1003070A4 /* FrequencyConverter.swift */,
 			);
 			name = Model;
@@ -326,7 +323,6 @@
 				A84FE0AC1BDBCF4B003070A4 /* Lpd8.swift in Sources */,
 				A8F987E51BD5448B00C08414 /* RootViewController.swift in Sources */,
 				A8F988151BD5491700C08414 /* CtcssViewController.swift in Sources */,
-				A84FE0A11BDBB7FD003070A4 /* Frequency.swift in Sources */,
 				A8D5ACF11BE3A1A6007B368F /* Settings.swift in Sources */,
 				A8F987E91BD5448B00C08414 /* ModelController.swift in Sources */,
 				A8F988171BD5496F00C08414 /* ChannelViewController.swift in Sources */,

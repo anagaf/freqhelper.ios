@@ -28,15 +28,15 @@ class ChannelsViewController: UIViewController {
     }
     
     func updateValue() {
-        var frequency = Settings.channelFrequency
-        if (!frequency.isValid()) {
-            frequency = Frequency(decihertz: Lpd69().values[1])
-            Settings.channelFrequency = frequency
+        var value = Settings.channelFrequency
+        if (value == 0) {
+            value = Lpd69().values[1]
+            Settings.channelFrequency = value
         }
         
-        self.mhzField.text = String(frequency.megahertzComponent)
-        self.khzField.text = String(frequency.kilohertzComponent)
-        self.hzField.text = String(frequency.hertzComponent)
+        self.mhzField.text = String(FrequencyConverter.megahertzComponent(value))
+        self.khzField.text = String(FrequencyConverter.kilohertzComponent(value))
+        self.hzField.text = String(FrequencyConverter.hertzComponent(value))
     }
 
     /*
