@@ -8,5 +8,11 @@
 
 import Foundation
 
-class Frequency {
+struct Frequency {
+    
+    let decihertz : Int
+    
+    init(decihertz : Int) {
+       self.decihertz = decihertz
+    }
 }
