@@ -30,7 +30,7 @@ class ChannelsViewController: UIViewController {
     func updateValue() {
         var value = Settings.channelFrequency
         if (value == 0) {
-            value = Lpd69().values[1]
+            value = Lpd69().values[0]
             Settings.channelFrequency = value
         }
         
