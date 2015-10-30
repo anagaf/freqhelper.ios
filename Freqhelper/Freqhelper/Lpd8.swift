@@ -10,7 +10,7 @@ import Foundation
 
 class Lpd8: Range {
     
-    let storedValues: Array<Int> = [
+    let storedValues: Array<UInt64> = [
         FrequencyConverter.decihertzWithMegahertz(433, kilohertz: 75),
         FrequencyConverter.decihertzWithMegahertz(433, kilohertz:100),
         FrequencyConverter.decihertzWithMegahertz(433, kilohertz:200),
@@ -21,7 +21,7 @@ class Lpd8: Range {
         FrequencyConverter.decihertzWithMegahertz(433, kilohertz:800)
     ]
     
-    var values : Array<Int> {
+    var values : Array<UInt64> {
         return self.storedValues
     }
     

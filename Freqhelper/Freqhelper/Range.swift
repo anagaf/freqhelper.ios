@@ -10,14 +10,14 @@ import Foundation
 
 protocol Range {
     
-    var values : Array<Int> { get }
+    var values : Array<UInt64> { get }
     
     var name : String { get }
 }
 
 extension Range {
     
-    func find (value : Int) -> Int {
+    func find (value : UInt64) -> Int {
         let index = self.values.indexOf({$0 == value});
         if (index == nil) {
             return NSNotFound;
@@ -25,7 +25,7 @@ extension Range {
         return index!;
     }
     
-    func findPrev (valueToFind : Int) -> Int {
+    func findPrev (valueToFind : UInt64) -> Int {
         var resultIndex = NSNotFound
         for (index, value) in self.values.enumerate() {
             if (valueToFind >= value) {
@@ -37,7 +37,7 @@ extension Range {
         return resultIndex;
     }
     
-    func findNext (valueToFind : Int) -> Int {
+    func findNext (valueToFind : UInt64) -> Int {
         var resultIndex = NSNotFound
         for (index, value) in self.values.enumerate().reverse() {
             if (valueToFind >= value) {

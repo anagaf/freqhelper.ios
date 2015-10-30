@@ -10,19 +10,21 @@ import Foundation
 
 class Lpd69 : Range {
     
-    let storedValues: Array<Int>
+    static let COUNT = 69
+    
+    let storedValues: Array<UInt64>
     
     init () {
         let base = FrequencyConverter.decihertzWithMegahertz(433, kilohertz: 75)
         let step = 25000
-        var values: Array<Int> = []
-        for index in 1...69 {
-            values[index] = base + (index - 1) * step
+        var values = Array<UInt64>(count: Lpd69.COUNT, repeatedValue: 0)
+        for index in 0...Lpd69.COUNT - 1 {
+            values[index] = base + UInt64(index * step)
         }
         self.storedValues = values
     }
     
-    var values : Array<Int> {
+    var values : Array<UInt64> {
         return self.storedValues
     }
     

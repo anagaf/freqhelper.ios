@@ -19,6 +19,7 @@ class ChannelsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.updateValue()
     }
     
     override func didReceiveMemoryWarning() {
@@ -26,6 +27,17 @@ class ChannelsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func updateValue() {
+        var frequency = Settings.channelFrequency
+        if (!frequency.isValid()) {
+            frequency = Frequency(decihertz: Lpd69().values[1])
+            Settings.channelFrequency = frequency
+        }
+        
+        self.mhzField.text = String(frequency.megahertzComponent)
+        self.khzField.text = String(frequency.kilohertzComponent)
+        self.hzField.text = String(frequency.hertzComponent)
+    }
 
     /*
     // MARK: - Navigation

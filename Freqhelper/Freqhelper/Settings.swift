@@ -10,15 +10,19 @@ import Foundation
 
 class Settings {
     
-    let channelFrequencyKey : String = "ChannelFrequency"
+    static let channelFrequencyKey : String = "ChannelFrequency"
     
-    var channelFrequency : Frequency {
+    static var channelFrequency : Frequency {
         get {
-            let decihertzValue = NSUserDefaults.standardUserDefaults().integerForKey(channelFrequencyKey)
-            return Frequency(decihertz : decihertzValue)
+            let decihertzValue = NSUserDefaults.standardUserDefaults().objectForKey(channelFrequencyKey)
+            if (decihertzValue == nil) {
+                return Frequency()
+            } else {
+                return Frequency(decihertz : decihertzValue!.unsignedLongLongValue)
+            }
         }
         set(newFrequency) {
-            NSUserDefaults.standardUserDefaults().setInteger(newFrequency.decihertz, forKey: channelFrequencyKey)
+            NSUserDefaults.standardUserDefaults().setObject(NSNumber(unsignedLongLong: newFrequency.decihertz), forKey: channelFrequencyKey)
         }
     }
 }
