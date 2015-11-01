@@ -52,7 +52,11 @@ class ChannelsViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCellWithIdentifier("channel", forIndexPath: indexPath) as! ChannelCell
+        
+        cell.name.text = self.ranges[indexPath.row].name
+        
+        return cell;
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {        

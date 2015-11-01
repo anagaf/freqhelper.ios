@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class TitleLabel : UILabel {
-    let padding = UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
+    let padding = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     
     override func drawTextInRect(rect: CGRect) {
         super.drawTextInRect(UIEdgeInsetsInsetRect(rect, padding))

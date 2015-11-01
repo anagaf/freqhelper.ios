@@ -12,6 +12,7 @@
 		A84FE0AC1BDBCF4B003070A4 /* Lpd8.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FE0AB1BDBCF4B003070A4 /* Lpd8.swift */; };
 		A84FE0AE1BDBD3B1003070A4 /* FrequencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FE0AD1BDBD3B1003070A4 /* FrequencyConverter.swift */; };
 		A84FE0B01BDBD9E6003070A4 /* Lpd69.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FE0AF1BDBD9E6003070A4 /* Lpd69.swift */; };
+		A853C1121BE6423900D75D70 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A853C1111BE6423900D75D70 /* ChannelCell.swift */; };
 		A86C0B2C1BE279CE00FD468B /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86C0B2B1BE279CE00FD468B /* TitleLabel.swift */; };
 		A8D5ACEE1BE39B89007B368F /* TileTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D5ACED1BE39B89007B368F /* TileTextField.swift */; };
 		A8D5ACF11BE3A1A6007B368F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D5ACF01BE3A1A6007B368F /* Settings.swift */; };
@@ -50,6 +51,7 @@
 		A84FE0AB1BDBCF4B003070A4 /* Lpd8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lpd8.swift; sourceTree = "<group>"; };
 		A84FE0AD1BDBD3B1003070A4 /* FrequencyConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrequencyConverter.swift; sourceTree = "<group>"; };
 		A84FE0AF1BDBD9E6003070A4 /* Lpd69.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lpd69.swift; sourceTree = "<group>"; };
+		A853C1111BE6423900D75D70 /* ChannelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
 		A86C0B2B1BE279CE00FD468B /* TitleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
 		A8D5ACED1BE39B89007B368F /* TileTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileTextField.swift; sourceTree = "<group>"; };
 		A8D5ACF01BE3A1A6007B368F /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			children = (
 				A86C0B2B1BE279CE00FD468B /* TitleLabel.swift */,
 				A8D5ACED1BE39B89007B368F /* TileTextField.swift */,
+				A853C1111BE6423900D75D70 /* ChannelCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				A8D5ACEE1BE39B89007B368F /* TileTextField.swift in Sources */,
 				A84FE0AE1BDBD3B1003070A4 /* FrequencyConverter.swift in Sources */,
 				A86C0B2C1BE279CE00FD468B /* TitleLabel.swift in Sources */,
+				A853C1121BE6423900D75D70 /* ChannelCell.swift in Sources */,
 				A84FE0A41BDBB87E003070A4 /* Range.swift in Sources */,
 				A84FE0A81BDBBC81003070A4 /* StaticRange.swift in Sources */,
 			);
