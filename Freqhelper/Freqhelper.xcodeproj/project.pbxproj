@@ -128,6 +128,7 @@
 		A8D5ACEF1BE3A196007B368F /* App */ = {
 			isa = PBXGroup;
 			children = (
+				A8F987E21BD5448B00C08414 /* AppDelegate.swift */,
 				A8D5ACF01BE3A1A6007B368F /* Settings.swift */,
 			);
 			name = App;
@@ -159,7 +160,6 @@
 				A8D5ACEF1BE3A196007B368F /* App */,
 				A86C0B2A1BE2798100FD468B /* Views */,
 				A84FE09F1BDBB7C5003070A4 /* Model */,
-				A8F987E21BD5448B00C08414 /* AppDelegate.swift */,
 				A8F987E41BD5448B00C08414 /* RootViewController.swift */,
 				A8F987E81BD5448B00C08414 /* ModelController.swift */,
 				A8F987EA1BD5448B00C08414 /* Main.storyboard */,
