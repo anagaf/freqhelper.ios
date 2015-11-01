@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChannelsViewController: UIViewController {
+class ChannelsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var mhzField: TileTextField!
     @IBOutlet weak var khzField: TileTextField!
@@ -16,10 +16,18 @@ class ChannelsViewController: UIViewController {
     
     @IBOutlet weak var channelsTable: UITableView!
     
+    let ranges : [Range] = [
+        Lpd69(),
+        Lpd8()
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.updateValue()
+        
+        channelsTable.dataSource = self
+        channelsTable.delegate = self
     }
     
     override func didReceiveMemoryWarning() {
@@ -39,6 +47,17 @@ class ChannelsViewController: UIViewController {
         self.hzField.text = String(FrequencyConverter.hertzComponent(value))
     }
 
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.ranges.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {        
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -48,5 +67,4 @@ class ChannelsViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
