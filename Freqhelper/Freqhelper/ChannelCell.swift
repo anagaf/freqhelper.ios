@@ -13,4 +13,5 @@ class ChannelCell : UITableViewCell {
 
     @IBOutlet weak var channel: TileTextField!
     @IBOutlet weak var name: TitleLabel!
+    
 }

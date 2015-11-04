@@ -47,20 +47,30 @@ class ChannelsViewController: UIViewController, UITableViewDataSource, UITableVi
         self.hzField.text = String(FrequencyConverter.hertzComponent(value))
     }
 
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return self.ranges.count
+    }
+    
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("channel", forIndexPath: indexPath) as! ChannelCell
         
-        cell.name.text = self.ranges[indexPath.row].name
+        cell.name.text = self.ranges[indexPath.section].name
         
         return cell;
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {        
     }
+    
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return section > 0 ? 10.0 : 0
+    }
+
     
     /*
     // MARK: - Navigation
