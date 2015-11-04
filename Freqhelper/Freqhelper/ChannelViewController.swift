@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChannelsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ChannelsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var mhzField: TileTextField!
     @IBOutlet weak var khzField: TileTextField!
@@ -30,6 +30,10 @@ class ChannelsViewController: UIViewController, UITableViewDataSource, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.mhzField.delegate = self
+        self.khzField.delegate = self
+        self.hzField.delegate = self
 
         self.updateValue()
         
@@ -86,6 +90,12 @@ class ChannelsViewController: UIViewController, UITableViewDataSource, UITableVi
         return section > 0 ? 10.0 : 0
     }
 
+    func textFieldDidEndEditing(textField: UITextField) {
+        if (textField === self.mhzField || textField === self.khzField || textField === self.hzField) {
+            Settings.channelFrequency = self.value;
+            self.channelsTable.reloadData()
+        }
+    }
     
     /*
     // MARK: - Navigation
