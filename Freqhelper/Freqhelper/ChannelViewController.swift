@@ -21,6 +21,13 @@ class ChannelsViewController: UIViewController, UITableViewDataSource, UITableVi
         Lpd8()
     ]
     
+    var value : UInt64 {
+        let mhz = UInt64(self.mhzField.text ?? "0")
+        let khz = UInt64(self.khzField.text ?? "0")
+        let hz = UInt64(self.hzField.text ?? "0")
+        return FrequencyConverter.decihertzWithMegahertz(mhz!, kilohertz: khz!, hertz: hz!)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -59,7 +66,15 @@ class ChannelsViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("channel", forIndexPath: indexPath) as! ChannelCell
         
-        cell.name.text = self.ranges[indexPath.section].name
+        let range = self.ranges[indexPath.section]
+        
+        cell.name.text = range.name
+        
+        if let channelIndex = range.find(self.value) {
+            cell.channel.text = String(channelIndex + 1)
+        } else {
+            cell.channel.text = ""
+        }
         
         return cell;
     }
