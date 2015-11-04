@@ -16,10 +16,11 @@ class Lpd69 : Range {
     
     init () {
         let base = FrequencyConverter.decihertzWithMegahertz(433, kilohertz: 75)
-        let step = 25000
+        let step = 250000
         var values = Array<UInt64>(count: Lpd69.COUNT, repeatedValue: 0)
-        for index in 0...Lpd69.COUNT - 1 {
+        for index in 0..<Lpd69.COUNT {
             values[index] = base + UInt64(index * step)
+            print("Item \(index) is \(values[index])")
         }
         self.storedValues = values
     }

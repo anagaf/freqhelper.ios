@@ -13,6 +13,15 @@
 		A84FE0AE1BDBD3B1003070A4 /* FrequencyConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FE0AD1BDBD3B1003070A4 /* FrequencyConverter.swift */; };
 		A84FE0B01BDBD9E6003070A4 /* Lpd69.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FE0AF1BDBD9E6003070A4 /* Lpd69.swift */; };
 		A853C1121BE6423900D75D70 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A853C1111BE6423900D75D70 /* ChannelCell.swift */; };
+		A853C1141BEA37DE00D75D70 /* Lpd69Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = A853C1131BEA37DE00D75D70 /* Lpd69Test.swift */; };
+		A853C11D1BEA3AE600D75D70 /* ctcss38.txt in Resources */ = {isa = PBXBuildFile; fileRef = A853C1151BEA3AE600D75D70 /* ctcss38.txt */; };
+		A853C11E1BEA3AE600D75D70 /* ctcss39.txt in Resources */ = {isa = PBXBuildFile; fileRef = A853C1161BEA3AE600D75D70 /* ctcss39.txt */; };
+		A853C11F1BEA3AE600D75D70 /* ctcss64.txt in Resources */ = {isa = PBXBuildFile; fileRef = A853C1171BEA3AE600D75D70 /* ctcss64.txt */; };
+		A853C1201BEA3AE600D75D70 /* dcs.txt in Resources */ = {isa = PBXBuildFile; fileRef = A853C1181BEA3AE600D75D70 /* dcs.txt */; };
+		A853C1211BEA3AE600D75D70 /* frs.txt in Resources */ = {isa = PBXBuildFile; fileRef = A853C1191BEA3AE600D75D70 /* frs.txt */; };
+		A853C1221BEA3AE600D75D70 /* lpd8.txt in Resources */ = {isa = PBXBuildFile; fileRef = A853C11A1BEA3AE600D75D70 /* lpd8.txt */; };
+		A853C1231BEA3AE600D75D70 /* lpd69.txt in Resources */ = {isa = PBXBuildFile; fileRef = A853C11B1BEA3AE600D75D70 /* lpd69.txt */; };
+		A853C1241BEA3AE600D75D70 /* pmr.txt in Resources */ = {isa = PBXBuildFile; fileRef = A853C11C1BEA3AE600D75D70 /* pmr.txt */; };
 		A86C0B2C1BE279CE00FD468B /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86C0B2B1BE279CE00FD468B /* TitleLabel.swift */; };
 		A8D5ACEE1BE39B89007B368F /* TileTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D5ACED1BE39B89007B368F /* TileTextField.swift */; };
 		A8D5ACF11BE3A1A6007B368F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D5ACF01BE3A1A6007B368F /* Settings.swift */; };
@@ -52,6 +61,15 @@
 		A84FE0AD1BDBD3B1003070A4 /* FrequencyConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrequencyConverter.swift; sourceTree = "<group>"; };
 		A84FE0AF1BDBD9E6003070A4 /* Lpd69.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lpd69.swift; sourceTree = "<group>"; };
 		A853C1111BE6423900D75D70 /* ChannelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
+		A853C1131BEA37DE00D75D70 /* Lpd69Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lpd69Test.swift; sourceTree = "<group>"; };
+		A853C1151BEA3AE600D75D70 /* ctcss38.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ctcss38.txt; sourceTree = "<group>"; };
+		A853C1161BEA3AE600D75D70 /* ctcss39.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ctcss39.txt; sourceTree = "<group>"; };
+		A853C1171BEA3AE600D75D70 /* ctcss64.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ctcss64.txt; sourceTree = "<group>"; };
+		A853C1181BEA3AE600D75D70 /* dcs.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dcs.txt; sourceTree = "<group>"; };
+		A853C1191BEA3AE600D75D70 /* frs.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = frs.txt; sourceTree = "<group>"; };
+		A853C11A1BEA3AE600D75D70 /* lpd8.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lpd8.txt; sourceTree = "<group>"; };
+		A853C11B1BEA3AE600D75D70 /* lpd69.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lpd69.txt; sourceTree = "<group>"; };
+		A853C11C1BEA3AE600D75D70 /* pmr.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pmr.txt; sourceTree = "<group>"; };
 		A86C0B2B1BE279CE00FD468B /* TitleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
 		A8D5ACED1BE39B89007B368F /* TileTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileTextField.swift; sourceTree = "<group>"; };
 		A8D5ACF01BE3A1A6007B368F /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -178,8 +196,17 @@
 		A8F987FA1BD5448B00C08414 /* FreqhelperTests */ = {
 			isa = PBXGroup;
 			children = (
+				A853C1151BEA3AE600D75D70 /* ctcss38.txt */,
+				A853C1161BEA3AE600D75D70 /* ctcss39.txt */,
+				A853C1171BEA3AE600D75D70 /* ctcss64.txt */,
+				A853C1181BEA3AE600D75D70 /* dcs.txt */,
+				A853C1191BEA3AE600D75D70 /* frs.txt */,
+				A853C11A1BEA3AE600D75D70 /* lpd8.txt */,
+				A853C11B1BEA3AE600D75D70 /* lpd69.txt */,
+				A853C11C1BEA3AE600D75D70 /* pmr.txt */,
 				A8F987FB1BD5448B00C08414 /* FreqhelperTests.swift */,
 				A8F987FD1BD5448B00C08414 /* Info.plist */,
+				A853C1131BEA37DE00D75D70 /* Lpd69Test.swift */,
 			);
 			path = FreqhelperTests;
 			sourceTree = "<group>";
@@ -306,6 +333,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A853C11D1BEA3AE600D75D70 /* ctcss38.txt in Resources */,
+				A853C1211BEA3AE600D75D70 /* frs.txt in Resources */,
+				A853C1231BEA3AE600D75D70 /* lpd69.txt in Resources */,
+				A853C11F1BEA3AE600D75D70 /* ctcss64.txt in Resources */,
+				A853C1241BEA3AE600D75D70 /* pmr.txt in Resources */,
+				A853C11E1BEA3AE600D75D70 /* ctcss39.txt in Resources */,
+				A853C1221BEA3AE600D75D70 /* lpd8.txt in Resources */,
+				A853C1201BEA3AE600D75D70 /* dcs.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8F987FC1BD5448B00C08414 /* FreqhelperTests.swift in Sources */,
+				A853C1141BEA37DE00D75D70 /* Lpd69Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
