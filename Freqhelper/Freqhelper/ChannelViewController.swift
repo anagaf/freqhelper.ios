@@ -72,13 +72,7 @@ class ChannelsViewController: UIViewController, UITableViewDataSource, UITableVi
         
         let range = self.ranges[indexPath.section]
         
-        cell.name.text = range.name
-        
-        if let channelIndex = range.find(self.value) {
-            cell.channel.text = String(channelIndex + 1)
-        } else {
-            cell.channel.text = ""
-        }
+        cell.update(range, value: self.value)
         
         return cell;
     }
