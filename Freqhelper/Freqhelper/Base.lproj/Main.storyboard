@@ -91,14 +91,14 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rkI-ln-k4Z" customClass="TileTextField" customModule="Freqhelper" customModuleProvider="target">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rkI-ln-k4Z" customClass="TileTextField" customModule="Freqhelper" customModuleProvider="target">
                                                 <rect key="frame" x="197" y="0.0" width="186" height="17"/>
                                                 <animations/>
                                                 <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s9i-yE-hpo" customClass="TileTextField" customModule="Freqhelper" customModuleProvider="target">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s9i-yE-hpo" customClass="TileTextField" customModule="Freqhelper" customModuleProvider="target">
                                                 <rect key="frame" x="393" y="0.0" width="187" height="17"/>
                                                 <animations/>
                                                 <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -133,30 +133,38 @@
                                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1v-Sg-6BJ" customClass="TitleLabel" customModule="Freqhelper" customModuleProvider="target">
-                                                                    <rect key="frame" x="68" y="0.0" width="13" height="44"/>
+                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmN-6F-ThM">
+                                                                    <rect key="frame" x="68" y="0.0" width="452" height="44"/>
                                                                     <animations/>
                                                                     <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MSe-eK-7Gp" customClass="TileTextField" customModule="Freqhelper" customModuleProvider="target">
-                                                                    <rect key="frame" x="91" y="0.0" width="466" height="44"/>
+                                                                    <state key="normal" title="&lt;">
+                                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </state>
+                                                                    <connections>
+                                                                        <action selector="didPressPrev:" destination="DWf-xm-f0H" eventType="touchUpInside" id="Gts-Di-RJJ"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MSe-eK-7Gp" customClass="TileTextField" customModule="Freqhelper" customModuleProvider="target">
+                                                                    <rect key="frame" x="530" y="0.0" width="10" height="44"/>
                                                                     <animations/>
                                                                     <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                     <textInputTraits key="textInputTraits"/>
                                                                 </textField>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y02-lG-Urx" customClass="TitleLabel" customModule="Freqhelper" customModuleProvider="target">
-                                                                    <rect key="frame" x="567" y="0.0" width="13" height="44"/>
+                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3j7-6C-ANe">
+                                                                    <rect key="frame" x="550" y="0.0" width="30" height="44"/>
                                                                     <animations/>
                                                                     <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
+                                                                    <state key="normal" title="&gt;">
+                                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    </state>
+                                                                    <connections>
+                                                                        <action selector="didPressNext:" destination="DWf-xm-f0H" eventType="touchUpInside" id="H5E-5T-JsE"/>
+                                                                    </connections>
+                                                                </button>
                                                             </subviews>
                                                             <animations/>
                                                             <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>

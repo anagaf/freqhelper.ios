@@ -21,6 +21,10 @@ class ChannelCell : UITableViewCell {
     
     private var range : Range!
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
     func update(range: Range, value: UInt64) {
         self.range = range
         self.name.text = range.name
@@ -30,5 +34,10 @@ class ChannelCell : UITableViewCell {
         } else {
             channel.text = ""
         }
+    }
+
+    @IBAction func didPressNext(sender: AnyObject) {
+    }
+    @IBAction func didPressPrev(sender: AnyObject) {
     }
 }
