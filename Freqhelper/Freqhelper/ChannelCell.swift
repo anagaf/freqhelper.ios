@@ -9,17 +9,24 @@
 import Foundation
 import UIKit
 
-protocol ChannelCellDelegate {
-    func onPrevClicked()
-    func onNexClicked()
+protocol ChannelCellListener {
+    func didPressPrev()
+    func didPressNext()
 }
 
 class ChannelCell : UITableViewCell {
 
     @IBOutlet weak var channel: TileTextField!
     @IBOutlet weak var name: TitleLabel!
+    @IBOutlet weak var prevButton: UIButton!
+    @IBOutlet weak var nextButton: UIButton!
+    
+    var listener: ChannelCellListener?
     
     private var range : Range!
+    
+    private var prevChannel: Int?
+    private var nextChannel: Int?
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -34,10 +41,19 @@ class ChannelCell : UITableViewCell {
         } else {
             channel.text = ""
         }
+        
+        self.prevChannel = self.range.findPrev(value)
+        self.prevButton.enabled = (self.prevChannel != nil)
+        
+        self.nextChannel = self.range.findNext(value)
+        self.nextButton.enabled = (self.nextButton != nil)
+    }
+
+    @IBAction func didPressPrev(sender: AnyObject) {
+        self.listener?.didPressPrev()
     }
 
     @IBAction func didPressNext(sender: AnyObject) {
-    }
-    @IBAction func didPressPrev(sender: AnyObject) {
-    }
+        self.listener?.didPressNext()
+    }    
 }

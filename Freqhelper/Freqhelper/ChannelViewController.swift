@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChannelsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate {
+class ChannelsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, ChannelCellListener {
 
     @IBOutlet weak var mhzField: TileTextField!
     @IBOutlet weak var khzField: TileTextField!
@@ -70,6 +70,8 @@ class ChannelsViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("channel", forIndexPath: indexPath) as! ChannelCell
         
+        cell.listener = self
+        
         let range = self.ranges[indexPath.section]
         
         cell.update(range, value: self.value)
@@ -90,6 +92,14 @@ class ChannelsViewController: UIViewController, UITableViewDataSource, UITableVi
             self.channelsTable.reloadData()
         }
     }
+    
+    func didPressPrev() {
+        
+    }
+    
+    func didPressNext() {
+        
+    }    
     
     /*
     // MARK: - Navigation

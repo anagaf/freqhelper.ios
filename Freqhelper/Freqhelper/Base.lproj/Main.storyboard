@@ -184,6 +184,8 @@
                                                 <connections>
                                                     <outlet property="channel" destination="MSe-eK-7Gp" id="mnE-st-Bp4"/>
                                                     <outlet property="name" destination="jr2-FF-TDf" id="hCG-ca-4Fy"/>
+                                                    <outlet property="nextButton" destination="3j7-6C-ANe" id="LBb-dB-xdz"/>
+                                                    <outlet property="prevButton" destination="UmN-6F-ThM" id="O2Y-eM-DMO"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
