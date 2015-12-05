@@ -36,7 +36,7 @@ extension Range {
     func findNext (valueToFind : UInt64) -> Int? {
         var resultIndex : Int? = nil
         for (index, value) in self.values.enumerate().reverse() {
-            if (valueToFind >= value) {
+            if (value > valueToFind) {
                 resultIndex = index
             } else {
                 break
