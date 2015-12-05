@@ -24,7 +24,7 @@ extension Range {
     func findPrev (valueToFind : UInt64) -> Int? {
         var resultIndex : Int? = nil
         for (index, value) in self.values.enumerate() {
-            if (valueToFind >= value) {
+            if (value < valueToFind) {
                 resultIndex = index
             } else {
                 break

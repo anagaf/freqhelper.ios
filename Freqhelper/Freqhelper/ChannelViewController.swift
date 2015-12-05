@@ -95,8 +95,7 @@ class ChannelsViewController: UIViewController, UITableViewDataSource, UITableVi
     }
 
     func didChangeChannel(range: Range, channel: Int) {
-        Settings.channelFrequency = range.values[channel - 1]
-        NSLog("Channel %d, value %d", channel, Settings.channelFrequency)
+        Settings.channelFrequency = range.values[channel]
         self.updateValue()
     }
     

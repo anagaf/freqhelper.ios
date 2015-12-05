@@ -27,28 +27,29 @@ class Lpd69Test: XCTestCase {
         }
     }
     
-    func testNextChannel() {
-        let range = Lpd69()
-        XCTAssertEqual(1, range.findNext(range.values[0]))
-        XCTAssertEqual(2, range.findNext(range.values[1]))
-
-        XCTAssertNil(range.findNext(range.values[range.values.count - 1]))
-        XCTAssertEqual(range.values.count - 1, range.findNext(range.values[range.values.count - 2]))
-        
-        XCTAssertEqual(1, range.findNext(range.values[0] + 1))
-        XCTAssertEqual(1, range.findNext(range.values[1] - 1))
-    }
-
     func testPrevChannel() {
         let range = Lpd69()
         XCTAssertNil(range.findPrev(range.values[0]))
         XCTAssertEqual(0, range.findPrev(range.values[1]))
+        XCTAssertEqual(2, range.findPrev(range.values[3]))
         
         XCTAssertEqual(range.values.count - 2, range.findPrev(range.values[range.values.count - 1]))
         XCTAssertEqual(range.values.count - 3, range.findPrev(range.values[range.values.count - 2]))
         
         XCTAssertEqual(1, range.findPrev(range.values[1] + 1))
         XCTAssertEqual(0, range.findPrev(range.values[1] - 1))
+    }
+
+    func testNextChannel() {
+        let range = Lpd69()
+        XCTAssertEqual(1, range.findNext(range.values[0]))
+        XCTAssertEqual(2, range.findNext(range.values[1]))
+        
+        XCTAssertNil(range.findNext(range.values[range.values.count - 1]))
+        XCTAssertEqual(range.values.count - 1, range.findNext(range.values[range.values.count - 2]))
+        
+        XCTAssertEqual(1, range.findNext(range.values[0] + 1))
+        XCTAssertEqual(1, range.findNext(range.values[1] - 1))
     }
     
     func parseFrequency(str : String) -> UInt64? {
