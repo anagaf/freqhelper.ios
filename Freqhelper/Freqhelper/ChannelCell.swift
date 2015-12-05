@@ -16,7 +16,7 @@ protocol ChannelCellListener {
 class ChannelCell : UITableViewCell {
 
     @IBOutlet weak var channel: TileTextField!
-    @IBOutlet weak var name: TitleLabel!
+    @IBOutlet weak var name: FHLabel!
     @IBOutlet weak var prevButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
     
