@@ -10,8 +10,7 @@ import Foundation
 import UIKit
 
 protocol ChannelCellListener {
-    func didPressPrev()
-    func didPressNext()
+    func didChangeChannel(range:Range, channnel:Int)
 }
 
 class ChannelCell : UITableViewCell {
@@ -46,14 +45,14 @@ class ChannelCell : UITableViewCell {
         self.prevButton.enabled = (self.prevChannel != nil)
         
         self.nextChannel = self.range.findNext(value)
-        self.nextButton.enabled = (self.nextButton != nil)
+        self.nextButton.enabled = (self.nextChannel != nil)
     }
 
     @IBAction func didPressPrev(sender: AnyObject) {
-        self.listener?.didPressPrev()
+        self.listener?.didChangeChannel(self.range, channnel: self.prevChannel!)
     }
 
     @IBAction func didPressNext(sender: AnyObject) {
-        self.listener?.didPressNext()
-    }    
+        self.listener?.didChangeChannel(self.range, channnel: self.nextChannel!)
+    }
 }

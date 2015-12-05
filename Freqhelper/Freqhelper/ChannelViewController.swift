@@ -92,14 +92,11 @@ class ChannelsViewController: UIViewController, UITableViewDataSource, UITableVi
             self.channelsTable.reloadData()
         }
     }
-    
-    func didPressPrev() {
-        
+
+    func didChangeChannel(range: Range, channnel: Int) {
+        Settings.channelFrequency = value
+        self.updateValue()
     }
-    
-    func didPressNext() {
-        
-    }    
     
     /*
     // MARK: - Navigation
