@@ -10,9 +10,9 @@ import UIKit
 
 class ChannelsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, ChannelCellListener {
 
-    @IBOutlet weak var mhzField: TileTextField!
-    @IBOutlet weak var khzField: TileTextField!
-    @IBOutlet weak var hzField: TileTextField!
+    @IBOutlet weak var mhzField: FHTextField!
+    @IBOutlet weak var khzField: FHTextField!
+    @IBOutlet weak var hzField: FHTextField!
     
     @IBOutlet weak var channelsTable: UITableView!
     

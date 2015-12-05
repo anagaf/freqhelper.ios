@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class TileTextField : UITextField {
+class FHTextField : UITextField {
     let padding = UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
     
     override func drawTextInRect(rect: CGRect) {
