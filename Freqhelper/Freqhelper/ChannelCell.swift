@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 protocol ChannelCellListener {
-    func didChangeChannel(range:Range, channnel:Int)
+    func didChangeChannel(range:Range, channel:Int)
 }
 
 class ChannelCell : UITableViewCell {
@@ -32,27 +32,37 @@ class ChannelCell : UITableViewCell {
     }
     
     func update(range: Range, value: UInt64) {
+        NSLog("Update %s cell with value %ld", range.name, value)
+
         self.range = range
         self.name.text = range.name
 
         if let channelIndex = range.find(value) {
             channel.text = String(channelIndex + 1)
+            NSLog("-- channel %d", channelIndex)
         } else {
             channel.text = ""
         }
         
         self.prevChannel = self.range.findPrev(value)
+        if prevChannel != nil {
+            NSLog("-- prev channel %d", prevChannel!)
+        }
         self.prevButton.enabled = (self.prevChannel != nil)
         
         self.nextChannel = self.range.findNext(value)
+        if nextChannel != nil {
+            NSLog("-- next channel %d", nextChannel!)
+        }
         self.nextButton.enabled = (self.nextChannel != nil)
+        
     }
 
     @IBAction func didPressPrev(sender: AnyObject) {
-        self.listener?.didChangeChannel(self.range, channnel: self.prevChannel!)
+        self.listener?.didChangeChannel(self.range, channel: self.prevChannel!)
     }
 
     @IBAction func didPressNext(sender: AnyObject) {
-        self.listener?.didChangeChannel(self.range, channnel: self.nextChannel!)
+        self.listener?.didChangeChannel(self.range, channel: self.nextChannel!)
     }
 }

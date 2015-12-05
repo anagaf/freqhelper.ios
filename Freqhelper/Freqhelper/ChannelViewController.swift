@@ -17,8 +17,7 @@ class ChannelsViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var channelsTable: UITableView!
     
     let ranges : [Range] = [
-        Lpd69(),
-        Lpd8()
+        Lpd69()
     ]
     
     var value : UInt64 {
@@ -35,10 +34,10 @@ class ChannelsViewController: UIViewController, UITableViewDataSource, UITableVi
         self.khzField.delegate = self
         self.hzField.delegate = self
 
+        self.channelsTable.dataSource = self
+        self.channelsTable.delegate = self
+
         self.updateValue()
-        
-        channelsTable.dataSource = self
-        channelsTable.delegate = self
     }
     
     override func didReceiveMemoryWarning() {
@@ -56,6 +55,8 @@ class ChannelsViewController: UIViewController, UITableViewDataSource, UITableVi
         self.mhzField.text = String(FrequencyConverter.megahertzComponent(value))
         self.khzField.text = String(FrequencyConverter.kilohertzComponent(value))
         self.hzField.text = String(FrequencyConverter.hertzComponent(value))
+        
+        self.channelsTable.reloadData()
     }
 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -93,8 +94,9 @@ class ChannelsViewController: UIViewController, UITableViewDataSource, UITableVi
         }
     }
 
-    func didChangeChannel(range: Range, channnel: Int) {
-        Settings.channelFrequency = value
+    func didChangeChannel(range: Range, channel: Int) {
+        Settings.channelFrequency = range.values[channel - 1]
+        NSLog("Channel %d, value %d", channel, Settings.channelFrequency)
         self.updateValue()
     }
     
