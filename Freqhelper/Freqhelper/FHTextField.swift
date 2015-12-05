@@ -1,5 +1,5 @@
 //
-//  TileTextField.swift
+//  FHTextField
 //  Freqhelper
 //
 //  Created by anagaf on 30/10/15.
@@ -10,25 +10,24 @@ import Foundation
 import UIKit
 
 class FHTextField : UITextField {
-    let padding = UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder:aDecoder)
+        self.font = FHStyle.font
+        self.textColor = UIColor.yellowColor()
+    }
+
     override func drawTextInRect(rect: CGRect) {
-        super.drawTextInRect(UIEdgeInsetsInsetRect(rect, padding))
+        super.drawTextInRect(UIEdgeInsetsInsetRect(rect, FHStyle.padding))
     }
     
     // Override -intrinsicContentSize: for Auto layout code
     override func intrinsicContentSize() -> CGSize {
-        let superContentSize = super.intrinsicContentSize()
-        let width = superContentSize.width + padding.left + padding.right
-        let heigth = superContentSize.height + padding.top + padding.bottom
-        return CGSize(width: width, height: heigth)
+        return FHStyle.intrinsicContentSize(super.intrinsicContentSize())
     }
     
     // Override -sizeThatFits: for Springs & Struts code
     override func sizeThatFits(size: CGSize) -> CGSize {
-        let superSizeThatFits = super.sizeThatFits(size)
-        let width = superSizeThatFits.width + padding.left + padding.right
-        let heigth = superSizeThatFits.height + padding.top + padding.bottom
-        return CGSize(width: width, height: heigth)
+        return FHStyle.sizeThatFits(super.sizeThatFits(size))
     }
 }
