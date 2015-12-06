@@ -17,7 +17,8 @@ class ChannelsViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var channelsTable: UITableView!
     
     let ranges : [Range] = [
-        Lpd69()
+        Lpd69(),
+        Lpd8()
     ]
     
     var value : UInt64 {

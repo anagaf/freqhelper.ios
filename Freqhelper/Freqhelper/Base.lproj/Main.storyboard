@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="703-4V-yAM">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Root View Controller-->
@@ -126,15 +127,15 @@
                                                             <rect key="frame" x="8" y="11" width="580" height="44"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Range" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jr2-FF-TDf" customClass="FHLabel" customModule="Freqhelper" customModuleProvider="target">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="58" height="44"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="174" height="44"/>
                                                                     <animations/>
                                                                     <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmN-6F-ThM">
-                                                                    <rect key="frame" x="68" y="0.0" width="453" height="44"/>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmN-6F-ThM">
+                                                                    <rect key="frame" x="184" y="0.0" width="58" height="44"/>
                                                                     <animations/>
                                                                     <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -145,16 +146,16 @@
                                                                         <action selector="didPressPrev:" destination="DWf-xm-f0H" eventType="touchUpInside" id="Gts-Di-RJJ"/>
                                                                     </connections>
                                                                 </button>
-                                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MSe-eK-7Gp" customClass="FHTextField">
-                                                                    <rect key="frame" x="530" y="0.0" width="10" height="44"/>
+                                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MSe-eK-7Gp" customClass="FHTextField">
+                                                                    <rect key="frame" x="252" y="0.0" width="260" height="44"/>
                                                                     <animations/>
                                                                     <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                     <textInputTraits key="textInputTraits"/>
                                                                 </textField>
-                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3j7-6C-ANe">
-                                                                    <rect key="frame" x="550" y="0.0" width="30" height="44"/>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3j7-6C-ANe">
+                                                                    <rect key="frame" x="522" y="0.0" width="58" height="44"/>
                                                                     <animations/>
                                                                     <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -168,10 +169,14 @@
                                                             </subviews>
                                                             <animations/>
                                                             <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstItem="3j7-6C-ANe" firstAttribute="width" secondItem="v48-VL-ag1" secondAttribute="width" multiplier="0.1" id="91x-m0-WTq"/>
+                                                                <constraint firstItem="UmN-6F-ThM" firstAttribute="width" secondItem="v48-VL-ag1" secondAttribute="width" multiplier="0.1" id="eOn-JK-l85"/>
+                                                                <constraint firstItem="jr2-FF-TDf" firstAttribute="width" secondItem="v48-VL-ag1" secondAttribute="width" multiplier="0.3" id="rIw-bM-crP"/>
+                                                            </constraints>
                                                         </stackView>
                                                     </subviews>
                                                     <animations/>
-                                                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstItem="v48-VL-ag1" firstAttribute="leading" secondItem="Uqm-GR-Eza" secondAttribute="leading" id="1Me-aT-uf5"/>
                                                         <constraint firstAttribute="trailing" secondItem="v48-VL-ag1" secondAttribute="trailing" id="3pv-ky-w28"/>
