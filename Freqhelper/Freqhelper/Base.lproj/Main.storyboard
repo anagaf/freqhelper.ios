@@ -134,7 +134,7 @@
                                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmN-6F-ThM">
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmN-6F-ThM" customClass="FHButton" customModule="Freqhelper">
                                                                     <rect key="frame" x="184" y="0.0" width="58" height="44"/>
                                                                     <animations/>
                                                                     <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -154,7 +154,7 @@
                                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                     <textInputTraits key="textInputTraits"/>
                                                                 </textField>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3j7-6C-ANe">
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3j7-6C-ANe" customClass="FHButton" customModule="Freqhelper">
                                                                     <rect key="frame" x="522" y="0.0" width="58" height="44"/>
                                                                     <animations/>
                                                                     <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
