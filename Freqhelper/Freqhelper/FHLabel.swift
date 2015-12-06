@@ -14,7 +14,6 @@ class FHLabel : UILabel {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder:aDecoder)
         self.font = FHStyle.font
-        self.textColor = UIColor.redColor()
     }
     
     override func drawTextInRect(rect: CGRect) {

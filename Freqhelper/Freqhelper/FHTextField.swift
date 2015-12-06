@@ -14,7 +14,6 @@ class FHTextField : UITextField {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder:aDecoder)
         self.font = FHStyle.font
-        self.textColor = UIColor.yellowColor()
     }
 
     override func drawTextInRect(rect: CGRect) {
