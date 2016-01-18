@@ -96,6 +96,11 @@ class ChannelsViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        let newLength = textField.text!.characters.count - range.length + string.characters.count
+        if (newLength > 3) {
+            return false;
+        }
+        
         let inverseSet = NSCharacterSet.decimalDigitCharacterSet().invertedSet
         let components = string.componentsSeparatedByCharactersInSet(inverseSet)
         let filtered = components.joinWithSeparator("")
