@@ -34,11 +34,28 @@ class ChannelsViewController: UIViewController, UITableViewDataSource, UITableVi
         self.mhzField.delegate = self
         self.khzField.delegate = self
         self.hzField.delegate = self
+        
+        let numpadToolbar = UIToolbar()
 
+        let spacer = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil)
+        
+        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.Plain, target: self, action: Selector("hideNumpad"))
+        
+        numpadToolbar.setItems([spacer, doneButton], animated: false)
+        numpadToolbar.sizeToFit()
+        
+        self.mhzField.inputAccessoryView = numpadToolbar
+        self.khzField.inputAccessoryView = numpadToolbar
+        self.hzField.inputAccessoryView = numpadToolbar
+        
         self.channelsTable.dataSource = self
         self.channelsTable.delegate = self
 
         self.updateValue()
+    }
+    
+    func hideNumpad() {
+        // TODO
     }
     
     override func didReceiveMemoryWarning() {
