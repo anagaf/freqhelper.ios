@@ -13,9 +13,10 @@ class FHTextField : UITextField {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder:aDecoder)
+        self.keyboardType = UIKeyboardType.NumberPad;
         self.font = FHStyle.font
     }
-
+    
     override func drawTextInRect(rect: CGRect) {
         super.drawTextInRect(UIEdgeInsetsInsetRect(rect, FHStyle.padding))
     }
@@ -28,5 +29,5 @@ class FHTextField : UITextField {
     // Override -sizeThatFits: for Springs & Struts code
     override func sizeThatFits(size: CGSize) -> CGSize {
         return FHStyle.sizeThatFits(super.sizeThatFits(size))
-    }
+    }    
 }

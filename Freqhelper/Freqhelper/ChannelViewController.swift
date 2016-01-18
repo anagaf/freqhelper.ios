@@ -94,7 +94,14 @@ class ChannelsViewController: UIViewController, UITableViewDataSource, UITableVi
             self.channelsTable.reloadData()
         }
     }
-
+    
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        let inverseSet = NSCharacterSet.decimalDigitCharacterSet().invertedSet
+        let components = string.componentsSeparatedByCharactersInSet(inverseSet)
+        let filtered = components.joinWithSeparator("")
+        return string == filtered;
+    }
+    
     func didChangeChannel(range: Range, channel: Int) {
         Settings.channelFrequency = range.values[channel]
         self.updateValue()
